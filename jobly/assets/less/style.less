@@ -1,0 +1,116 @@
+// Bootstrap
+@import 'bootstrap/bootstrap';
+
+// Base Styles
+@import 'slices/base.less';
+
+@primary-color: #E25079;
+@text-color: #878787;
+@highlight-color: #8051AF;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: @text-color;
+	background-color: #ffffff;
+}
+
+.navbar {
+	font-size: 14px;
+	margin-bottom: 0;
+	background-color: #ffffff;
+	border-width: 0;
+}
+
+.form-container {
+	background-color: #F9FAFB;
+}
+
+.btn-primary {
+	background-color: @highlight-color;
+	border: none;
+	color: #ffffff;
+}
+
+.search-form {
+	padding: 130px 0 100px 0;
+	background-image: url('/build/geometry2.png');
+}
+
+.form-container {
+	padding: 0 40px;
+}
+
+#post-job {
+	border-radius: 0;
+	color: #ffffff;
+}
+
+#search-jobs {
+	background-color: @primary-color;
+	color: #ffffff;
+	width: 100%;
+}
+
+.form-control {
+	border-width: 0;
+	border-radius: 3px;
+}
+
+.label-text {
+	font-size: 14px;
+	padding: 10px 20px 10px 0;
+	display: inline-block;
+}
+
+.actived {
+	color: @highlight-color;
+}
+
+.freelence {
+	background-color: #E4CF5B;
+}
+
+.fulltime {
+	background-color: #88C1B9;
+}
+
+.parttime {
+	background-color: #F9A55B;
+}
+
+.other {
+	background-color: #67B9D3;
+}
+
+.job {
+	margin: 10px 0;
+	border-radius: 5px;
+	color: #303030;
+	padding: 10px 16px;
+	
+	position: relative;
+
+	.information {
+		font-size: 12px;
+		position: absolute;
+		float: right;
+		top: 40px;
+		right: 20px;
+		text-align: right;
+		
+		line-height: 18px;
+	}
+
+	.type {
+		font-size: 12px;
+	}
+
+	.title {
+		margin: 4px 0;
+	}
+
+	.company {
+		color: @text-color;
+		font-size: 14px;
+	}
+}
